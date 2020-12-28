@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+<head  th:replace="layout/_layout_header :: _layout_header(~{::title},~{::link},~{})">
+	<title>首页</title>
+</head>
+<body>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]--> 
+<h1>已前后端</h1>
+<footer th:replace="layout/_layout_footer :: _layout_footer"></footer>
+<script type="text/javascript" th:src="@{/layui-2.5.7/layui.js}" src="../static/layui-2.5.7/layui.js"></script>
+</body>
+</html>
